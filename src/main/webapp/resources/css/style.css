@@ -1,0 +1,457 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body h1{
+    color:bisque;
+    size: 15px;
+    text-align: center;
+}
+.body{
+    height:auto;
+    margin: 0;
+}
+
+
+
+body{
+    background-image:url("http://wallpapercave.com/wp/3jQbonO.jpg");
+    background-color: darkgray;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color:black;
+    margin: 0 auto;
+    min-width: 900px;
+    background-repeat: repeat;
+
+}
+
+
+.header{
+    position: relative;
+    height: 220px;
+    border-bottom: 3px solid gray;
+    background-image: url("/resources/images/tyres.jpg");
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.6); /* Тень */
+    /*padding: 10px; !* Поля вокруг текста *!*/
+}
+.header h1{
+    color:#09d2cd;
+    font-style: italic;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: #0235ab 2px 2px 0px,  #0675ab 2px 2px 0px,  #0675ab 2px 2px 5px;
+    margin: 0;
+    padding-top: 30px;
+}
+.h1Header{
+    float: left;
+    margin-left: 460px;
+}
+.header p{
+    color: azure;
+    font-size: 20px;
+    text-align: center;
+    clear: both;
+}
+.header a,button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    float: left;
+}
+.header a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+
+.login{
+    float: right;
+    width: 210px;
+    margin-top: 50px;
+}
+.login div{
+    float: left;
+    margin-right: 20px;
+}
+.login div button:hover{
+    background-color: magenta;
+    color: black;
+}
+
+
+
+
+.menu{
+    height: 50px;
+    background-image: linear-gradient(to bottom,transparent 30%,#3c763d);
+    background-color: #a3e5a3;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.6);
+    /*margin-top: -10px;*/
+}
+.menu ul{
+    margin: 0 20px 0 0;
+    padding: 0;
+    float: right;
+}
+.menu ul li{
+    list-style-type:none;
+    margin:4px 0 0 5px;
+    display: inline-block;
+}
+.menu a,button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    float: left;
+}
+.menu a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+    text-decoration: none;
+}
+.menu ul li a#basket{
+    background-color: #d6fdfa;
+    margin-right: 30px;
+}
+.menu ul li a:hover#basket{
+    background-color: #fae1f9;
+}
+
+
+
+
+.footer{
+    height: 150px;
+    /*background-image: linear-gradient(transparent 80%, #a3e5a3 );*/
+    margin-top: auto;
+    clear: both;
+}
+.footer a,button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    float: left;
+}
+.footer a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
+
+body select{
+    color: black;
+}
+body a:hover{
+    text-decoration: none;
+}
+
+.form{
+    margin: auto;
+    padding: 50px 20px;
+    width: 33%;
+    color: white;
+    font-size: larger;
+}
+.form input,select{
+    height: 30px;
+    margin: 5px;
+    color: black;
+}
+.form.inpImage input{
+    height: 30px;
+}
+.form button{
+    float: right;
+    width: 80px;
+    color: black;
+}
+
+.form2{
+    margin: 0 auto;
+    width: 50%;
+    height: 40px;
+    color: white;
+    font-size: larger;
+}
+.form2 button{
+    float: right;
+    padding: 7px 15px;
+    margin-bottom: 3px;
+    color: #000;
+}
+.form2 input{
+    height: 30px;
+    color: black;
+    margin: 5px 10px 0 0;
+
+}
+.form3{
+    margin: 20px auto;
+    width:30%;
+}
+.form3 ul{
+    list-style: none;
+    color: white;
+    font-size: larger;
+}
+.form3 ul li{
+    float: left;
+    margin-bottom: 10px;
+}
+.form3 ul li input{
+    color: black;
+    padding: 5px;
+}
+.form3 ul li button{
+    color: #000;
+}
+#a{
+    margin-left: 119px;
+}
+#b{
+    margin-left: 62px;
+}
+#c{
+    margin-left: 123px;
+}
+#d{
+    margin-left: 113px;
+}
+#e{
+    margin-left: 86px;
+}
+#f{
+    margin-left: 20px;
+}
+
+
+.allGoodsOut{
+    width: 95%;
+    margin-left: 45px;
+
+}
+.allGoods {
+    width: 300px;
+    background-color: darkgrey;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
+    padding-bottom: 10px;
+}
+.allGoods a,button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    margin: 0 0 5px 20px;
+}
+.allGoods a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
+.all3{
+    margin: 30px;
+    height: 45px;
+    float: left;
+}
+.all3 a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    float: left;
+    margin-left: 15px;
+}
+.all3 a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
+
+.allGoods2{
+    margin: auto;
+    width: 80%;
+}
+.allGoods2 p a,button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    float: left;
+    margin: 5px 0 10px 15px;
+}
+.allGoods2 p a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
+
+.page a{
+    border: 0;
+    background-color: inherit;
+    padding: 0 ;
+
+}
+
+
+.pageGoods{
+    width: 300px;
+    text-align: center;
+    background-color: darkgrey;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 20px ;
+    padding: 10px;
+    float: left;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
+}
+.pageGoods a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    float: right;
+    margin: -9px 10px 10px 0;
+}
+.pageGoods button{
+    margin: 5px 0 5px 5px;
+}
+.pageGoods a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
+
+
+
+.size{
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 50%;
+}
+.sizeView{
+
+    background-color: azure;
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 5px;
+    border: 2px solid darkcyan;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 5px;
+
+
+}
+.sizeInp{
+    clear: both;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 65%;
+}
+.sizeInp a,button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    float: left;
+    margin-left: 10px;
+}
+.sizeInp a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
+.home{
+    margin: 20px auto;
+    width: 70%;
+    height: 45px;
+    color: aliceblue;
+
+
+}
+.homeInn{
+    width: 80%;
+    margin:0px auto;
+    height: 45px;
+}
+.homeInn a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    display: inline-block;
+    margin: 0px 0 0 20px;
+}
+.homeInn a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
+
+
+.summa{
+    width: auto;
+    height: 100px;
+    background-color: bisque;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 20px;
+    border: 2px solid #9ca83e;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
+    position: absolute;
+    right: 30px;
+    top: 290px;
+
+}
+.summa a{
+    text-decoration: none;
+    color: black;
+    padding: 6px 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    display: inline-block;
+    margin: 0px 0 0 0px;
+}
+.summa a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
+
