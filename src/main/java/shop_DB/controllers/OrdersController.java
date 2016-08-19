@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import shop_DB.DTO.GoodsDTO;
 import shop_DB.entity.Goods;
 import shop_DB.entity.Orders;
@@ -15,10 +16,7 @@ import shop_DB.services.OrdersService;
 import shop_DB.services.UserService;
 
 import java.security.Principal;
-import java.util.ArrayList;
-import java.util.Base64;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Администратор on 12.08.2016.
@@ -39,7 +37,7 @@ public class OrdersController {
     public String buyForm(@PathVariable String id, Principal principal){
         User user = userService.findOneById(Integer.parseInt(principal.getName()));
         Goods goods = goodsService.findOne(Integer.parseInt(id));
-        List<Goods> goodsList = user.getGoodsList();
+        Set<Goods> goodsList = user.getGoodsList();
         goodsList.add(goods);
         int quantity = 0;
         int summa = 0;
@@ -63,7 +61,7 @@ public class OrdersController {
 
         User user = userService.findOneById(Integer.parseInt(principal.getName()));
         Goods goods = goodsService.findOne(id);
-        List<Goods> goodsList = user.getGoodsList();
+        Set<Goods> goodsList = user.getGoodsList();
         goodsList.add(goods);
         Iterator<Goods> iterator = goodsList.iterator();
         while (iterator.hasNext()){
@@ -92,7 +90,7 @@ public class OrdersController {
     @RequestMapping(value = "/basket")
     public String getBasket(Principal principal,Model model){
         User user = userService.findOneById(Integer.parseInt(principal.getName()));
-        List<Goods> goodsList = user.getGoodsList();
+        Set<Goods> goodsList = user.getGoodsList();
         List<GoodsDTO> goodsDTOs = new ArrayList<>();
         int summ =0;
         for(Goods goods : goodsList){
@@ -113,5 +111,31 @@ public class OrdersController {
         model.addAttribute("summ", summ);
         model.addAttribute("goods",goodsDTOs);
         return"views-user-basket";
+    }
+
+
+    @RequestMapping(value = "/orderForm")
+    public String orderForm(Model model){
+        model.addAttribute("orderForm");
+        return "views-orders-form";
+    }
+
+    @RequestMapping(value = "/order", method = RequestMethod.POST)
+    public String orderSubmit(Principal principal, Model model, @RequestParam("city") String city, @RequestParam("street") String street,
+                              @RequestParam("house") Integer house, @RequestParam("appartment") Integer appartment){
+
+        User user = userService.findOneById(Integer.parseInt(principal.getName()));
+        Orders orders = new Orders();
+        orders.setCity(city);
+        orders.setStreet(street);
+        orders.setHouse(house);
+        orders.setAppartment(appartment);
+        orders.setUser(user);
+        orders.setSumma(user.getTotalSumma());
+        ordersService.add(orders);
+
+        model.addAttribute("orderView", orders);
+        model.addAttribute("userView", user);
+        return "views-orders-orderView";
     }
 }

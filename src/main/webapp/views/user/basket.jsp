@@ -33,5 +33,5 @@
 
 <div class="summa">
     <p>Total summa is: ${summ} UAH</p>
-    <a href="/">Buy</a>
+    <a href="/orderForm">Buy</a>
 </div>

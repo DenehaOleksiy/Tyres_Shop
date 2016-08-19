@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by Администратор on 09.07.2016.
@@ -41,7 +42,7 @@ public class User {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "goods_user" ,joinColumns = @JoinColumn(name ="id_user"),inverseJoinColumns = @JoinColumn(name ="id_goods"))
-    private List<Goods>goodsList;
+    private Set<Goods>goodsList;
 
 
     public User() {
@@ -122,11 +123,11 @@ public class User {
         this.password = password;
     }
 
-    public List<Goods> getGoodsList() {
+    public Set<Goods> getGoodsList() {
         return goodsList;
     }
 
-    public void setGoodsList(List<Goods> goodsList) {
+    public void setGoodsList(Set<Goods> goodsList) {
         this.goodsList = goodsList;
     }
 

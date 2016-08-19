@@ -97,7 +97,7 @@ public class UserServiceImpl implements UserService, UserDetailsService{
 
 
             msg.setText( "Hello " + userName + ",\n You'r login: " + email + "\n You'r password: " + password
-                    + "\n Registration link: localhost:8080/registration/" + registrationVar);
+                    + "\n Please copy this link and follow them\n Registration link:   localhost:8080/registration/" + registrationVar);
 
             Transport.send( msg );
 

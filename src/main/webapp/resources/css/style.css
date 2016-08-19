@@ -167,6 +167,35 @@ body a:hover{
     color: white;
     font-size: larger;
 }
+
+.form p span{
+    color: greenyellow;
+    font-size: larger;
+
+}
+.form span a{
+    margin-top: 20px;
+    display: block;
+    float: right;
+}
+.form h2{
+    color: bisque;
+}
+
+.form a,button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom,transparent 40%,#3c763d);
+    margin: 0 0 5px 20px;
+}
+.form a:hover, button:hover{
+    background-color: aqua;
+    color: darkslategrey;
+}
 .form input,select{
     height: 30px;
     margin: 5px;
