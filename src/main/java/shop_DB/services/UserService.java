@@ -15,5 +15,5 @@ public interface UserService {
     User findOneById(int id);
     List<User> findAll();
 
-    // public void sendEmail(int id, String email, String userName, String password, String registrationVar);
+     public void sendEmail(int id, String email, String userName, String password, String registrationVar);
 }

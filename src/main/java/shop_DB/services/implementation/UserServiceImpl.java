@@ -61,53 +61,53 @@ public class UserServiceImpl implements UserService, UserDetailsService{
     }
 
 
-//    @Override
-//    public void sendEmail(int id, String email, String userName, String password, String registrationVar) {
-//
-//        try{
-//
-//            Properties props = new Properties();
-//            props.put("mail.smtp.host", "smtp.gmail.com");
-//            props.put("mail.smtp.auth", "true");
-//            props.put("mail.debug", "true");
-//            props.put("mail.smtp.starttls.enable", "true");
-//            props.put("mail.smtp.port", "465");
-//            props.put("mail.smtp.socketFactory.port", "465");
-//            props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-//            props.put("mail.smtp.socketFactory.fallback", "false");
-//
-//            Session mailSession = Session.getInstance(props, new javax.mail.Authenticator() {
-//
-//                protected PasswordAuthentication getPasswordAuthentication() {
-//                    return new PasswordAuthentication("alex.lviv.1975@gmail.com", "gelios1975");
-//                }
-//            });
-//
-//            mailSession.setDebug(true); // Enable the debug mode
-//
-//            Message msg = new MimeMessage( mailSession );
-//
-//            msg.setFrom( new InternetAddress( "alex.lviv.1975@gmail.com" ) );
-//            msg.setRecipients( Message.RecipientType.TO,InternetAddress.parse(email) );
-//            msg.setSentDate( new Date());
-//            msg.setSubject( "Registration" );
-//
-//
-//            registrationVar = registrationVar.replace(".", "-");
-//
-//
-//            msg.setText( "Hello " + userName + ",\n You'r login: " + email + "\n You'r password: " + password
-//                    + "\n Registration link: localhost:8080/registration/" + registrationVar);
-//
-//            Transport.send( msg );
-//
-//        }catch(Exception E){
-//            System.out.println( "Oops something has gone wrong!");
-//            System.out.println( E );
-//        }
-//
-//
-//    }
+    @Override
+    public void sendEmail(int id, String email, String userName, String password, String registrationVar) {
+
+        try{
+
+            Properties props = new Properties();
+            props.put("mail.smtp.host", "smtp.gmail.com");
+            props.put("mail.smtp.auth", "true");
+            props.put("mail.debug", "true");
+            props.put("mail.smtp.starttls.enable", "true");
+            props.put("mail.smtp.port", "465");
+            props.put("mail.smtp.socketFactory.port", "465");
+            props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+            props.put("mail.smtp.socketFactory.fallback", "false");
+
+            Session mailSession = Session.getInstance(props, new javax.mail.Authenticator() {
+
+                protected PasswordAuthentication getPasswordAuthentication() {
+                    return new PasswordAuthentication("alex.lviv.1975@gmail.com", "gelios1975");
+                }
+            });
+
+            mailSession.setDebug(true); // Enable the debug mode
+
+            Message msg = new MimeMessage( mailSession );
+
+            msg.setFrom( new InternetAddress( "alex.lviv.1975@gmail.com" ) );
+            msg.setRecipients( Message.RecipientType.TO,InternetAddress.parse(email) );
+            msg.setSentDate( new Date());
+            msg.setSubject( "Registration" );
+
+
+            registrationVar = registrationVar.replace(".", "-");
+
+
+            msg.setText( "Hello " + userName + ",\n You'r login: " + email + "\n You'r password: " + password
+                    + "\n Registration link: localhost:8080/registration/" + registrationVar);
+
+            Transport.send( msg );
+
+        }catch(Exception E){
+            System.out.println( "Oops something has gone wrong!");
+            System.out.println( E );
+        }
+
+
+    }
 
 
 }
