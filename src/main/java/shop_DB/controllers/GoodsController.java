@@ -134,4 +134,23 @@ public class GoodsController {
         model.addAttribute("diamList", goodsDTOList);
         return "views-goods-diamView";
     }
+
+    @RequestMapping(value = "/orderByPrice")
+    public String orderByPrice(Model model){
+      List<GoodsDTO> goodslist =  goodsService.orderByPrice();
+        model.addAttribute("showAll",goodslist);
+        return"views-goods-all";
+    }
+
+    @RequestMapping(value = "/between")
+    public String between(){
+        return"views-goods-between";
+    }
+
+    @RequestMapping(value = "/betweenView", method = RequestMethod.POST)
+    public String betweenView(@RequestParam ("from") String a, @RequestParam("to") String b, Model model){
+        List<GoodsDTO> goodslist = goodsService.findBetween(Integer.parseInt(a), Integer.parseInt(b));
+        model.addAttribute("showAll",goodslist);
+        return"views-goods-all";
+    }
 }

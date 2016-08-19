@@ -159,4 +159,43 @@ public class GoodsServiceImpl implements GoodsService {
         }
         return goodsDTOs;
     }
+
+   public List<GoodsDTO> orderByPrice(){
+       List<GoodsDTO> goodsDTOs = new ArrayList<>();
+       List<Goods>goodsList = goodsRepo.orderByPrice();
+       for(Goods goods:goodsList){
+           GoodsDTO goodsDTO = new GoodsDTO();
+           goodsDTO.setId(goods.getId());
+           goodsDTO.setName(goods.getName());
+           goodsDTO.setBrand(goods.getBrand());
+           goodsDTO.setCategory(goods.getCategory());
+           goodsDTO.setDiameter(goods.getDiameter());
+           goodsDTO.setWidth(goods.getWidth());
+           goodsDTO.setHeight(goods.getHeight());
+           goodsDTO.setPrice(goods.getPrice());
+           String image = Base64.getEncoder().encodeToString(goods.getImage());
+           goodsDTO.setImage(image);
+           goodsDTOs.add(goodsDTO);
+       }return goodsDTOs;
+    }
+
+   public List<GoodsDTO> findBetween(int a, int b){
+        List<GoodsDTO> goodsDTOs = new ArrayList<>();
+        List<Goods>goodsList = goodsRepo.findBetween(a,b);
+        for(Goods goods:goodsList){
+            GoodsDTO goodsDTO = new GoodsDTO();
+            goodsDTO.setId(goods.getId());
+            goodsDTO.setName(goods.getName());
+            goodsDTO.setBrand(goods.getBrand());
+            goodsDTO.setCategory(goods.getCategory());
+            goodsDTO.setDiameter(goods.getDiameter());
+            goodsDTO.setWidth(goods.getWidth());
+            goodsDTO.setHeight(goods.getHeight());
+            goodsDTO.setPrice(goods.getPrice());
+            String image = Base64.getEncoder().encodeToString(goods.getImage());
+            goodsDTO.setImage(image);
+            goodsDTOs.add(goodsDTO);
+        }return goodsDTOs;
+
+    }
 }

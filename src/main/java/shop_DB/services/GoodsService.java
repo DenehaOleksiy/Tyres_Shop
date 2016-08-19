@@ -26,4 +26,8 @@ public interface GoodsService {
     GoodsDTO findOneById(int id);
 
     List<GoodsDTO> findDiameter(int sizeDiameter);
+
+    List<GoodsDTO> orderByPrice();
+
+    List<GoodsDTO> findBetween(int a, int b);
 }

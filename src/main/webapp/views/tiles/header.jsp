@@ -10,7 +10,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <div class="header">
-    <div class="h1Header"><h1>Tyres  here!</h1></div>
+    <div class="h1Header"></div>
     <div class="login">
         <div> <sec:authorize access="isAnonymous()"><a  href="/loginpage">Login!</a></sec:authorize></div>
         <sec:authorize access="isAuthenticated()">

@@ -16,7 +16,13 @@ public interface GoodsRepo extends JpaRepository<Goods,Integer>{
     List<Goods> findName(@Param("param") String name);
 
     @Query("select g from Goods g where g.diameter.sizeDiameter = :param")
-    List<Goods> findDiameter(@Param("param") int sizeDiameter);
+    List<Goods> findDiameter(@Param("param") int diameter);
+
+    @Query("select  g from Goods  g order by g.price")
+    List<Goods> orderByPrice();
+
+    @Query("select g from Goods g where g.price between ?1 and ?2 order by g.price")
+    List<Goods> findBetween(@Param("1") int price1, @Param("2") int price2);
 
 
 }

@@ -47,7 +47,10 @@ body{
 }
 .h1Header{
     float: left;
-    margin-left: 460px;
+    margin:20px 0 0 380px;
+    background-image: url("/resources/images/name.png");
+    width: 630px;
+    height: 150px;
 }
 .header p{
     color: azure;
@@ -94,7 +97,7 @@ body{
     background-image: linear-gradient(to bottom,transparent 30%,#3c763d);
     background-color: #a3e5a3;
     box-shadow: 0px 7px 10px rgba(0,0,0,0.6);
-    /*margin-top: -10px;*/
+
 }
 .menu ul{
     margin: 0 20px 0 0;
@@ -268,6 +271,26 @@ body a:hover{
     margin-left: 20px;
 }
 
+
+.form4{
+    margin: 50px auto;
+    width: 60%;
+    height: 40px;
+    color: white;
+    font-size: larger;
+}
+.form4 button{
+    float: right;
+    padding: 7px 15px;
+    margin-bottom: 3px;
+    color: #000;
+}
+.form4 input{
+    height: 30px;
+    color: black;
+    margin: 5px 10px 0 0;
+
+}
 
 .allGoodsOut{
     width: 95%;

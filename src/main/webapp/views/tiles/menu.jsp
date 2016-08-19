@@ -8,6 +8,8 @@
         <li> <a href="/goods/all">All goods</a></li>
         <li><a href="/find/name">Find Goods by name</a></li>
         <li><a href="/find/diameter">Find Goods by diameter</a></li>
+        <li><a href="/orderByPrice">Order Goods by price</a></li>
+        <li><a href="/between">Find Goods between prices</a></li>
 
     </ul>
 </div>
