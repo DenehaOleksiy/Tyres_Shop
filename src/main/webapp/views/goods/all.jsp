@@ -16,7 +16,7 @@
             <div class="page">
                 <a  href="/goods/page/${a.id}">
 
-                    <p style="text-align: center; font-diameter: 14pt;">${a.name}</p>
+                    <p style="text-align: center; font-diameter: 14pt;"><span>${a.name}</span></p>
                     <p style="text-align: center; font-diameter: 14pt;">${a.brand}</p>
                     <p style="text-align: center; font-diameter: 14pt;">${a.category}</p>
                     <p style="text-align: center; font-diameter: 14pt;">${a.diameter}</p>

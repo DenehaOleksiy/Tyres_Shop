@@ -10,9 +10,9 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<div class="form3">
+<div class="form3" >
     <form:form action="/registration" method="post" modelAttribute="user">
-        <ul>
+        <ul style="color: #333">
             <li> <form:errors path="name"/>
                 <form:label path="name">Name</form:label>
                 <form:input id="a" path="name"/></li>

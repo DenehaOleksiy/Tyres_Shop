@@ -11,11 +11,11 @@
 <form:form  action="/loginprocessing" method="post">
 
 
-    <h1 style="text-align: center; font-size: 30px;color: azure;padding: 20px 0;">Увійдіть у систему!</h1>
+    <h1 style="text-align: center; font-size: 30px;color: #333;padding: 20px 0;">Увійдіть у систему!</h1>
     <div class="form2">
-        <label for="login">Логін: </label>
+        <label style="color: #333" for="login">Логін: </label>
         <input id="login" type="text" name="username" placeholder="Email or phoneNumber">
-        <label for="password">Пароль: </label>
+        <label style="color: #333" for="password">Пароль: </label>
         <input id="password" type="password" name="password" placeholder="Password">
 
         <button  type="submit">Login</button>

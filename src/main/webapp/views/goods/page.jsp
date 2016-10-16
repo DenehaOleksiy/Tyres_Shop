@@ -4,8 +4,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <div class="pageGoods">
-    <p>${goods.id}</p>
-    <p>${goods.name}</p>
+    <%--<p>${goods.id}</p>--%>
+    <p><span>${goods.name}</span></p>
     <p>${goods.brand}</p>
     <p>${goods.category}</p>
     <p>${goods.diameter}</p>

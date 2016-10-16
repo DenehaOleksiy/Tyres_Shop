@@ -11,10 +11,12 @@
 
 <div class="header">
     <div class="h1Header"></div>
+    <div class="logoHeader"></div>
+    <div class="logoLine"></div>
     <div class="login">
         <div> <sec:authorize access="isAnonymous()"><a  href="/loginpage">Login!</a></sec:authorize></div>
         <sec:authorize access="isAuthenticated()">
-            <p>  Hello  <sec:authentication property="name"/>!</p>
+            <p>  Hello  <sec:authentication property="principal.username" />!</p>
 
             <form:form action="/logout" method="post">
                 <div> <button style="margin: 4px 0 0 70px; "  type="submit">Logout</button></div>

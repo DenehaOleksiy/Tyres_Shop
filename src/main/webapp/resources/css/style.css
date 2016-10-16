@@ -3,7 +3,7 @@ html{
     padding: 0;
 }
 body h1{
-    color:bisque;
+    color:black;
     size: 15px;
     text-align: center;
 }
@@ -15,8 +15,8 @@ body h1{
 
 
 body{
-    background-image:url("http://wallpapercave.com/wp/3jQbonO.jpg");
-    background-color: darkgray;
+    background-image:url("http://www.science-gcse.co.uk/wp-content/uploads/2016/03/Wiki-background.jpg");
+    background-color: lightgray;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     color:black;
@@ -47,9 +47,9 @@ body{
 }
 .h1Header{
     float: left;
-    margin:20px 0 0 380px;
-    background-image: url("/resources/images/name.png");
-    width: 630px;
+    margin:20px 0 0 350px;
+    background-image: url("/resources/images/tyrelogo.png");
+    width: 700px;
     height: 150px;
 }
 .header p{
@@ -73,12 +73,33 @@ body{
     color: darkslategrey;
     text-decoration: none;
 }
+.logoHeader{
+    background-image: url("/resources/images/tyreshopper-logo.png" );
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 275px;
+    top: 90px;
 
+    z-index: 5;
+}
+.logoLine{
+    background-image: url("/resources/images/logoline.png" );
+    width: 700px;
+    height: 40px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 340px;
+    top: 45px;
+
+    z-index: 1;
+}
 
 .login{
     float: right;
     width: 210px;
-    margin-top: 50px;
+    margin-top: -50px;
 }
 .login div{
     float: left;
@@ -167,7 +188,7 @@ body a:hover{
     margin: auto;
     padding: 50px 20px;
     width: 33%;
-    color: white;
+    color: #333;
     font-size: larger;
 }
 
@@ -276,19 +297,22 @@ body a:hover{
     margin: 50px auto;
     width: 60%;
     height: 40px;
-    color: white;
+    color: #333;
     font-size: larger;
+    font-weight: 700;
 }
 .form4 button{
     float: right;
     padding: 7px 15px;
     margin-bottom: 3px;
     color: #000;
+    font-weight: 400;
 }
 .form4 input{
     height: 30px;
     color: black;
     margin: 5px 10px 0 0;
+    font-weight: 400;
 
 }
 
@@ -299,7 +323,7 @@ body a:hover{
 }
 .allGoods {
     width: 300px;
-    background-color: darkgrey;
+    background-color: lightgray;
     border: 1px solid black;
     border-radius: 7px;
     margin-left: 10px;
@@ -401,7 +425,18 @@ body a:hover{
     background-color: aqua;
     color: darkslategrey;
 }
+.pageGoods p span{
+   font-size: larger;
+    font-weight: 600;
+}
+.page p span{
+    font-size: larger;
+    font-weight: 600;
 
+}
+.page{
+    padding-top: 10px;
+}
 
 
 .size{
@@ -449,7 +484,7 @@ body a:hover{
     margin: 20px auto;
     width: 70%;
     height: 45px;
-    color: aliceblue;
+    color: black;
 
 
 }
@@ -505,5 +540,9 @@ body a:hover{
 .summa a:hover, button:hover{
     background-color: aqua;
     color: darkslategrey;
+}
+
+.brands table tr td a img{
+    margin: 10px;
 }
 
