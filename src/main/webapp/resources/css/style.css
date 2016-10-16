@@ -115,7 +115,7 @@ body{
 
 .menu{
     height: 50px;
-    background-image: linear-gradient(to bottom,transparent 30%,#3c763d);
+    background-image: linear-gradient(to bottom,transparent 30%,#207baf);
     background-color: #a3e5a3;
     box-shadow: 0px 7px 10px rgba(0,0,0,0.6);
 
@@ -544,5 +544,6 @@ body a:hover{
 
 .brands table tr td a img{
     margin: 10px;
+    box-shadow: 3px 7px 10px rgba(0,0,0,0.6);
 }
 

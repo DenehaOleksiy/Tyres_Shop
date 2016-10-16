@@ -26,12 +26,30 @@
             <tr> <td><a href="#"><img src="/resources/images/michelin-300.jpg"></a></td> <td><a href="#"><img src="/resources/images/dunlop-lrg.jpg"></a></td> <td><a href="#"><img src="/resources/images/hancook-lrg.jpg"></a></td></tr>
         </table>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate augue ac pretium convallis. Donec orci ex, laoreet convallis massa at, luctus tincidunt ante. Morbi faucibus sodales velit et viverra. Praesent orci elit, volutpat quis metus nec, mattis ornare risus. Pellentesque mollis et sapien vitae pretium. Nulla facilisi. In quis gravida ipsum, at dapibus elit. Etiam sit amet mauris et libero auctor fringilla ac ac quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.<br>
+<p style="font-size: larger;padding-top: 20px;"><span >No.1 Online Retailer in the Ukraine for Cheap Tyres</span></p>
+  <p>  Established in 1994, Tyre Shopper has consistently maintained distinction as the Ukraina`s #1 tyre retailer for the past 8 years. With over 20 years of industry experience via a value-centric focus, we provide fully fitted tyres at 230 tyre centre locations across the country.
 
-        Pellentesque varius commodo leo et imperdiet. Quisque a purus quis metus consequat pretium at id lorem. Etiam auctor dui vel erat rhoncus, ac viverra lectus varius. Duis lectus lorem, tincidunt a fringilla nec, pretium vestibulum mauris. Phasellus consequat porttitor orci, volutpat pulvinar diam placerat maximus. Morbi eget efficitur dui, pharetra ornare massa. Aliquam erat volutpat. Maecenas metus nisi, facilisis ut orci quis, interdum aliquam arcu. Ut non libero eros. Proin elementum viverra efficitur. Proin non venenatis est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam venenatis eu quam eu interdum.<br>
+    Through an elite roster of over 1000 skilled tyre technicians servicing satisfied customers, we guarantee the best prices on the market without compromising quality, service and value-proposition.
 
-        Aliquam lacinia eros et metus egestas volutpat. Sed tempor nulla ac mauris tincidunt, non feugiat mauris sollicitudin. Nullam cursus maximus nulla, ut pellentesque mauris fringilla id. Sed congue sed nunc ac vulputate. Ut vitae aliquet nibh, non varius nulla. Sed dictum pellentesque nisi, id sodales magna accumsan at. Proin pellentesque, lectus ac auctor euismod, massa urna ullamcorper turpis, efficitur aliquam augue erat sit amet lacus. Donec congue dolor enim, eu tristique nunc vestibulum eget. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus efficitur accumsan nunc, eget tincidunt libero vestibulum nec. Nunc nec auctor nibh. Sed ultrices nisl vitae metus commodo, et pharetra felis sagittis. Etiam volutpat sodales semper. Mauris malesuada velit ac libero vehicula, quis ultricies erat suscipit. Vivamus eget pellentesque nibh, quis ullamcorper metus. Maecenas id libero molestie, tempor enim non, cursus magna.<br>
+    <p style="font-size: larger;padding-top: 20px;"><span >Brand Loyalty</span></p>
 
+    As part of our brand-loyalty mandate, we ensure that all our customers are facilitated in smooth purchasing decisions through our database of over 6,000 verified ratings and reviews for a wide range of tyre-patterns, as penned by thousands of our existing satisfied customers.
+
+    Moreover, Tyre Shopper prides itself in stocking and selling only internationally recognised major brands with world-class quality such as: Barum, Avon, Bridgestone, Continental, Dunlop, Goodyear, Michelin and Pirelli etc. – and more!
+
+    <p style="font-size: larger;padding-top: 20px;"><span > Accolades</span></p>
+
+    Tyre Shopper has the honor of having the highest number of tyre reviews on the online business reviewer website Trustpilot, whilst being a 12-time Hitwise ‘Top 10 Award’ winner.
+
+    <p style="font-size: larger;padding-top: 20px;"><span > Customer-Satisfaction</span></p>
+
+    Tyre Shopper’s UK based customer service call-centre is fully accessible through a designated Freephone number around the clock throughout the year, 24 hours a day and 7 days a week! Our customer service agents strive to exceed your expectations.
+
+    <p style="font-size: larger;padding-top: 20px;"><span > Price Promise Guarantee!</span></p>
+
+    Our unique Price Promise Guarantee ensures that we provide you with the lowest most value-oriented prices on the market.
+
+    Our rich database enlists a wide array of van tyres, caravan tyres, 4x4 tyres, summer and winter tyres in premium, mid or budget ranges – easily searchable to give you instant access to tens of thousands of tyre brands in stock.</p>
 
     <div class="homeInn">
         <sec:authorize access="hasRole('ROLE_ADMIN')">
